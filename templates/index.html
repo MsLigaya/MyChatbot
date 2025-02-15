@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Chatbot</title>
+    <style>
+        body {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            background-color: #f4f4f4;
+            font-family: Arial, sans-serif;
+        }
+        .chat-container {
+            width: 50%;
+            max-width: 500px;
+            background: white;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+            text-align: center;
+        }
+        h2 {
+            margin-bottom: 15px;
+            color: #333;
+        }
+        #chatbox {
+            height: 300px;
+            overflow-y: auto;
+            border: 1px solid #ddd;
+            padding: 10px;
+            margin-bottom: 10px;
+            text-align: left;
+        }
+        input, button {
+            padding: 10px;
+            font-size: 16px;
+            margin-top: 5px;
+        }
+        input {
+            width: 70%;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+        }
+        button {
+            width: 25%;
+            border: none;
+            background-color: #007bff;
+            color: white;
+            cursor: pointer;
+            border-radius: 5px;
+        }
+        button:hover {
+            background-color: #0056b3;
+        }
+    </style>
+    <script>
+        function sendMessage() {
+            var userText = document.getElementById("userInput").value;
+            fetch("/get", {
+                method: "POST",
+                body: new URLSearchParams({ "msg": userText }),
+                headers: { "Content-Type": "application/x-www-form-urlencoded" }
+            })
+            .then(response => response.text())
+            .then(responseText => {
+                document.getElementById("chatbox").innerHTML += "<p><b>You:</b> " + userText + "</p>";
+                document.getElementById("chatbox").innerHTML += "<p><b>Bot:</b> " + responseText + "</p>";
+                document.getElementById("userInput").value = "";
+            });
+        }
+    </script>
+</head>
+<body>
+    <div class="chat-container">
+        <h2>Hi! I am a chatbot here to assist you with your OJT concerns.</h2>
+        <div id="chatbox"></div>
+        <input id="userInput" type="text" placeholder="Type a message...">
+        <button onclick="sendMessage()">Send</button>
+    </div>
+</body>
+</html>

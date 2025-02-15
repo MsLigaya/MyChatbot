@@ -1,0 +1,69 @@
+{
+    "intents": [
+      {
+        "tag": "greeting",
+        "patterns": ["Hi", "Hello", "Is anyone there?", "Hey", "Good day!", "Yo", "What's Up", "Long time no see", "Good afternoon",  "It's nice to see you","How's it going?",
+       "What's happening?", "Howdy!", "Greetings!", "Hey there!", "What's good?", "Good evening", "Nice to meet you",  "Welcome!", "What's new?",  "What's crackin'?",
+        "All good?",  "Sup?", "Good to see you again"],
+        "responses": ["Hello! How can I help you?", "Hi there!", "Hello there! How can I help you?"]
+      },
+      {
+        "tag": "greet_questions",
+        "patterns": ["How are you?", "How's your day?", "How's Life?", "Hey, what's new?", "Are you Okay?", "Hey, how’s it going?", "How do you do?", "Hi, how are you?"],
+        "responses": ["Hi, I'm Good! How about you?", "Doing fine, thanks for asking. How have you been?", "Still alive and kicking! And you?", "Pretty good, how have you been?"]
+      },
+      {
+        "tag": "response_positive",
+        "patterns": ["I am also good!", "Fine", "Still Kickin!", "I've been well!"],
+        "responses": ["Good to hear that! How may I help you, by the way?", "That's great! How may I help you, by the way?"]
+      },
+      {
+        "tag": "thank_you",
+        "patterns": ["Thank you", "Thanks", "Thanks a lot", "Thanks so much", "Thank you very much", "I appreciate it", "Much appreciated", "Thanks a ton", "Big thanks", "Many thanks", "Thanks a bunch", "I’m grateful", "Appreciate it", "Thanks a million", "Thanks for your help"],
+        "responses": ["You're welcome!", "No problem!", "Glad to help!", "Anytime!", "Happy to assist!", "You're very welcome!", "Don't mention it!", "Always here to help!", "My pleasure!", "No worries!"]
+      },
+      {
+        "tag": "ojt_requirements",
+        "patterns": ["requirements", "What are the requirements for OJT?", "What do I need for OJT?", "What documents are required for OJT?", "Do I need a resume for OJT?",
+                  "Is medical clearance needed for OJT?", "What should I prepare for OJT?", "Does OJT require an endorsement letter?", "What forms do I submit for OJT?", "Do I need school approval for OJT?", "What qualifications are needed for OJT?"],
+        "responses": [ "To complete your OJT requirements, you need to prepare the following: Resume/CV, Endorsement Letter from school, OJT Application Form (if required by the company), School ID and Registration Form, Medical Certificate, Parental/Guardian Consent, Oath of Responsibility, Memorandum of Agreement (MOA) between school and company."]
+      },
+      {
+        "tag": "ojt_expectations",
+        "patterns": ["OJT", "expectations", "What should I expect in OJT?", "What are the common experiences in OJT?", "How does OJT work?", "What will I do during OJT?", "What is OJT like?"],
+        "responses": ["OJT involves hands-on experience in a real workplace.", "You will apply theoretical knowledge to real-world tasks.", "Expect to work under supervision and learn industry best practices.", "In an OJT you may be assigned specific projects or tasks related to your field."]
+      },
+
+      {
+        "tag": "ojt_eligibility",
+        "patterns": ["qualify ojt", "how to qualify", "qualifications", "Who is eligible for OJT?", "Who can apply for OJT?", "What are the qualifications for OJT?", "Can anyone take OJT?","Am I eligible for OJT?", "Do I need to be a student to do OJT?", "What are the requirements to qualify for OJT?", "Who can undergo OJT?"],
+        "responses": ["To be eligible for OJT, you must meet the following criteria: Must be a student enrolled in a program that requires OJT, Must have completed the required academic units, Must meet the minimum academic standing (some programs require a specific GPA)."]
+      },
+      {
+        "tag": "ojt_task",
+        "patterns": ["duties", "ojt concerns", "taks", "OJT Tasks", "OJT duties", "responsibilities", "What should I do during OJT?", "What tasks will I perform in OJT?","What are my responsibilities in OJT?", "What is expected from me in OJT?","What should I focus on during OJT?", "What will I be doing in my internship?","How can I make the most of my OJT?", "What are common OJT tasks?"],
+        "responses": ["During your OJT, you should focus on the following tasks and responsibilities: Assist in real-world projects and company operations, perform clerical or administrative duties if required, use industry-related tools, software, or equipment, observe and learn from professionals in the field, participate in team meetings and discussions."]
+      },
+      {
+        "tag": "ojt_completion",
+        "patterns": ["completion", "OJT completion", "comply", "How do I complete my OJT?", "What are the OJT completion requirements?","What do I need to submit after OJT?", "Is there a final report for OJT?","Do I need a supervisor’s evaluation for OJT?", "How do I prove I completed my OJT?","What documents are needed after OJT?", "Do I get a certificate after OJT?","Does my school require an OJT report?", "Is there a final OJT interview?"],
+        "responses": ["To successfully complete your OJT, you need to fulfill the following requirements:  Completion of required OJT hours, final OJT report summarizing experiences and learnings, signed Certificate of Completion (if provided by the company)."]
+      },
+      {
+        "tag": "ojt_company",
+        "patterns": ["company", "apply", "ojt company", "How do I find an OJT company?", "What is a good company for OJT?","Where can I apply for OJT?", "Can you suggest OJT companies?","What companies accept OJT trainees?", "How do I choose the right OJT company?","Does my school assign an OJT company?", "Can I apply for OJT in any company?","How do I get accepted for OJT?"],
+        "responses": ["Finding the right OJT company is important for gaining real-world experience. Here is what you can do: Check your school’s list of accredited OJT companies, ask OJT coordinator or career advisors for recommendations, search online job portals for OJT openings, visit company websites and look for internship opportunities, or network with professionals, alumni, or relatives in your field."]
+      },
+      {
+        "tag": "ojt_change_company",
+        "patterns": ["change company", "transfer company", "transfer", "change", "Can I change my OJT company?", "What if I want to transfer to another OJT company?","Is it possible to switch companies during OJT?", "How do I change my OJT company?", "Can I quit my OJT and find another company?", "What happens if I leave my OJT company?", "Can I apply for a different OJT company midway?", "Will my school allow me to transfer OJT companies?","Do I need approval to change my OJT company?", "Can I restart my OJT in a new company?"],
+        "responses": ["It is possible to change your OJT company, but consider the following steps and conditions:  If the company does not provide relevant experience for your course.  If there are serious issues like harassment, unsafe conditions, or unfair treatment. If the company closes or stops accepting trainees. If your school requires you to transfer due to policy changes"]
+      },
+      {
+        "tag": "goodbye",
+        "patterns": ["Goodbye","Bye","See you later","Take care","Catch you later","See you soon","Farewell","I'm leaving","Talk to you later","Later"],
+        "responses": [ "Goodbye! Have a great day!","See you later!", "Take care!","Bye! Talk to you soon!","Catch you later!","Farewell! Stay safe!"]
+      }
+    ]
+  }
+  
